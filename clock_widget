@@ -1,0 +1,10 @@
+<div id="clock" style="font-size: 24px; font-family: Arial, sans-serif;"></div>
+<script>
+  function updateClock() {
+    var now = new Date();
+    var timeString = now.toLocaleTimeString();
+    document.getElementById('clock').textContent = timeString;
+  }
+  setInterval(updateClock, 1000);
+  updateClock();
+</script>
